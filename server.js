@@ -67,7 +67,7 @@ function callOperations()
             prompt.get(['key'],function(err,result){
                 if(result.key in jsonData){
                     readContents(result.key);
-                    callOperations();
+                    //callOperations();
                 }
                 else{
                     console.log("Provided key does not exist");
@@ -117,7 +117,7 @@ function operationForRead(locations){
     if(fs.lstatSync(locations).isDirectory() == true){
         console.log("Would you like to read more files inside the " +locations + " directory ?");
         prompt.get(['ans'], function(err,result){
-            if(result.ans.toLowerCase()=="Yes"){
+            if(result.ans.toLowerCase()=="yes"){
                 console.log("Enter the file/directory name")
                 prompt.get(['filename'],function(err,result){
                     locations = locations + "/" + result.filename;
