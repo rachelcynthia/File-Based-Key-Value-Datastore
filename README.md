@@ -7,3 +7,5 @@
 ** This initiates the creation of store.js and asks you to provide location for master storage, if failed to assign storage it assigns to the default C:\Master directory
 * When running the command after that:
 ** The directory has already been initialised, it provides 3 options: 1. Create 2. Read and 3. Delete
+
+# Demo Link: https://drive.google.com/file/d/1K2vzOsvPbqnLJSujkTgGD5cnlHMkPzi2/view?usp=sharing
